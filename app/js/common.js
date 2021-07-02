@@ -13,6 +13,15 @@ $(document).ready(function () {
 });
 //плавный скролл end
 
+$('.slogan p').typeIt({
+    strings: 'Чем понятнее бриф, тем ярче креатив',
+    speed: 80,
+    autoStart: false,
+    loop: true,
+    loopDelay: 1500
+});
+
+
 $('.command-slider').slick({
     slidesToShow: 1,
     dots: true,
@@ -70,3 +79,4 @@ $('.news-slider').slick({
 $('[name="phone"]').mask('+7(999) 999-9999');
 
 new WOW().init();
+

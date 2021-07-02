@@ -138,6 +138,10 @@ label {
   max-width: 290px;
   width: 100%;
   border: none; }
+  .btn:hover, .btn:focus {
+    outline: none;
+    -webkit-box-shadow: none;
+            box-shadow: none; }
 
 .btn-accent {
   background-blend-mode: multiply;
@@ -174,7 +178,7 @@ label {
   font-weight: 600;
   text-transform: uppercase; }
   .menu li {
-    margin: 0 53px 0 0; }
+    margin: 0 25px 0 0; }
     .menu li:last-child {
       margin: 0; }
     .menu li a {
@@ -182,8 +186,7 @@ label {
       .menu li a:hover {
         color: #ea314b; }
 
-.header-wrapper {
-  width: calc(100% + 40px);
+.list-social {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -192,9 +195,34 @@ label {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 26px 20px;
-  margin: 0 -20px;
-  border: solid 1px #333333; }
+  margin: 0 auto; }
+  .list-social li {
+    margin: 0 15px 0 0; }
+    .list-social li:last-child {
+      margin: 0; }
+    .list-social li a {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      width: 30px;
+      height: 30px; }
+
+.header-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 26px 0; }
 
 .container {
   max-width: 1200px; }
@@ -229,13 +257,18 @@ main {
   max-width: 750px;
   width: 100%;
   letter-spacing: 0.46px;
-  font-size: 46px; }
+  font-size: 46px;
+  border-radius: 30px; }
+
+.services h3 {
+  margin: 0 0 40px;
+  font-size: 30px; }
 
 .services-box {
   text-align: center;
   margin: 0 auto 49px;
   color: #808080;
-  font-size: 30px;
+  font-size: 28px;
   font-weight: 600;
   -webkit-transition: .3s ease;
   transition: .3s ease;
@@ -269,6 +302,10 @@ main {
     margin: 0 auto 40px;
     -webkit-transition: .3s ease;
     transition: .3s ease; }
+  .services-box p {
+    max-width: 275px;
+    width: 100%;
+    margin: 0 auto; }
 
 .command {
   padding: 100px 0;
@@ -452,12 +489,12 @@ main {
 
 .news-slider-box {
   background: #fff;
-  -webkit-box-shadow: 8px 8.9px 46px 0 rgba(0, 0, 0, 0.13);
-          box-shadow: 8px 8.9px 46px 0 rgba(0, 0, 0, 0.13);
+  -webkit-box-shadow: 4px 4.9px 16px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 4px 4.9px 16px 0 rgba(0, 0, 0, 0.1);
   padding: 20px 20px 30px;
   font-size: 12px;
   margin: 50px auto;
-  max-width: 370px;
+  max-width: 350px;
   width: 100%; }
   .news-slider-box__img {
     width: 100%;
@@ -602,6 +639,15 @@ main {
         -ms-flex-pack: center;
             justify-content: center;
     border-left: solid 2px #333333; }
+  .address-box .btn {
+    margin: 20px 0 0; }
+
+.map {
+  width: 100%;
+  height: 400px; }
+  .map iframe {
+    width: 100%;
+    height: 100%; }
 
 .callback {
   padding: 0 0 85px; }
@@ -829,7 +875,7 @@ footer {
   .header-wrapper {
     width: 100%;
     margin: 0 auto;
-    padding: 20px; }
+    padding: 20px 0; }
   header .menu li {
     margin: 0 20px 0 0; }
   header .btn {
@@ -989,7 +1035,11 @@ footer {
   header .menu li {
     margin: 0 10px 5px 0; }
     header .menu li:last-child {
-      margin: 0 0 5px; } }
+      margin: 0 0 5px; }
+  .services h3 {
+    font-size: 20px; }
+  .news-slider-box {
+    max-width: 250px; } }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 420px) {
@@ -1013,4 +1063,10 @@ footer {
   .subtitle {
     font-size: 24px; }
   .clients-slider {
-    padding: 0 40px; } }
+    padding: 0 40px; }
+  .list-social {
+    width: 100%;
+    margin: 0 auto 20px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; } }
