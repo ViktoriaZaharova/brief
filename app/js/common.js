@@ -8,7 +8,11 @@ $(document).ready(function () {
                 scrollTop: $(scroll_el).offset().top
             }, 500);
         }
+        if ($(window).width() < 992) {
+            $('header .menu').fadeOut();
+        }
         return false;
+
     });
 });
 //плавный скролл end
@@ -80,3 +84,11 @@ $('[name="phone"]').mask('+7(999) 999-9999');
 
 new WOW().init();
 
+$('.btn-burger').on('click', function () {
+   $('header .menu').fadeToggle();
+});
+
+
+$('.btn-close').on('click', function () {
+    $('header .menu').fadeOut();
+});
