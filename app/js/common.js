@@ -18,7 +18,7 @@ $(document).ready(function () {
 //плавный скролл end
 
 $('.slogan p').typeIt({
-    strings:["Чем понятнее бриф, тем ярче креатив", "But here is a better one."],
+    strings:["Чем понятнее бриф, тем ярче креатив", "But here is a better one lorem lorem lorem."],
     speed: 80,
     autoStart: false,
     loop: true,
