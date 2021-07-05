@@ -18,11 +18,12 @@ $(document).ready(function () {
 //плавный скролл end
 
 $('.slogan p').typeIt({
-    strings: 'Чем понятнее бриф, тем ярче креатив',
+    strings:["Чем понятнее бриф, тем ярче креатив", "But here is a better one."],
     speed: 80,
     autoStart: false,
     loop: true,
-    loopDelay: 1500
+    loopDelay: 1500,
+    breakLines: false,
 });
 
 
