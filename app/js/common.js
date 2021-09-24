@@ -81,6 +81,22 @@ $('.news-slider').slick({
     ]
 });
 
+$('.design-slider').slick({
+    slidesToShow: 2,
+    dots: false,
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    responsive: [
+        {
+            breakpoint: 576,
+            settings: {
+                slidesToShow: 1,
+            }
+        }
+    ]
+});
+
 $('[name="phone"]').mask('+7(999) 999-9999');
 
 new WOW().init();
